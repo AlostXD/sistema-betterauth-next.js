@@ -12,18 +12,22 @@ export default function Page() {
     // O Check da sessão foi feito assim para que ele não rode duas vezes.
     const checkSession = async () => {
       try {
-        // Verifica se o usuário está autenticado
-        const session = await authClient.getSession()
-
-        toast.success(`Sessão verificada com sucesso! Seja bem-vindo(a) ao Dashboard, ${session.data?.user.name}! Cadastre o restante dos dados acessando seu perfil.`);
+        const session = await authClient.getSession();
+        toast.success(
+          `Sessão verificada com sucesso! Bem-vindo(a), ${session.data?.user.name}!`,
+          {
+            id: 'session-success', // ID exclusivo
+          }
+        );
       } catch (error) {
         console.error("Erro ao verificar sessão:", error);
         router.push("/");
       }
-    }
+    };
+  
     useEffect(() => {
       checkSession();
-    },);
+    }, []);
 
     // Libera para utilizar a sessão do usuário.
     const data = authClient.useSession();
