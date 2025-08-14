@@ -1,3 +1,55 @@
+## Explicação do Projeto
+
+Este projeto foi desenvolvido como um modelo pré-pronto de sistema de autenticação, além de servir como material de estudo. Ele foi criado utilizando as seguintes tecnologias:
+
+- **Next.js**
+- **Tailwind CSS**
+- **TypeScript**
+- **Prisma & PostgreSQL**
+- **React Toaster** (para envio de alertas)
+- **Better-Auth**
+
+Durante o desenvolvimento, foram adicionados comentários no código para auxiliar aqueles que desejarem estudar ou modificar o projeto.
+
+## Observações Importantes
+
+Para que o projeto funcione corretamente, é necessário criar um arquivo `.env` na raiz da aplicação (fora de qualquer pasta existente). Nesse arquivo, você deve incluir a URL de conexão do banco de dados, que pode ser obtida facilmente pela Vercel (criadora do Next.js). A conexão pode ser feita localmente ou por meio de terceiros, mas é obrigatório o uso de um banco de dados **PostgreSQL**.
+
+Além disso, será necessário acessar a documentação do **Better-Auth** para gerar o seu secret. [Clique aqui para acessar a documentação](https://www.better-auth.com/docs/installation).
+
+Antes de começar a editar o projeto, instale as dependências executando o seguinte comando no terminal:
+
+```bash
+npm install
+```
+
+Ou
+
+```bash
+npm i
+```
+
+### Possíveis Adições Futuras
+
+O projeto pode receber novas funcionalidades ao longo do tempo, como:
+
+- Sistema de envio de e-mails;
+- Sistema de envio de código de verificação;
+- Sistema de autenticação em dois fatores (Two-Factor Authentication);
+- Entre outros.
+
+## Funcionalidades Adicionais
+
+- O sistema possui um **Middleware** na rota padrão (`/dashboard`), o que impede usuários não autenticados de acessarem essa rota.
+- Como o foco foi criar um sistema funcional para edição, o layout (fontes, cores, etc.) foi mantido básico, com o essencial para o funcionamento correto.
+
+## Contribuições
+
+O projeto está aberto para contribuições, dicas e ideias. Caso tenha sugestões, envie um e-mail para: [junio.ribeiro02@hotmail.com](mailto:junio.ribeiro02@hotmail.com).
+
+
+
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
