@@ -11,6 +11,16 @@ Este projeto foi desenvolvido como um modelo pré-pronto de sistema de autentica
 
 Durante o desenvolvimento, foram adicionados comentários no código para auxiliar aqueles que desejarem estudar ou modificar o projeto.
 
+O projeto também possui 4 páginas acessáveis. São elas:
+
+/sign-up (Cadastro)
+/sign-in (Login)
+/sign-out (Logoff)
+/dashboard (Página após login/cadastro)
+
+Para ter acesso a elas, basta escrever no final da URL do site o seu respectivo nome. Exemplo:
+http://localhost:3000/sign-in (Página de login)
+
 ## Observações Importantes
 
 Para que o projeto funcione corretamente, é necessário criar um arquivo `.env` na raiz da aplicação (fora de qualquer pasta existente). Nesse arquivo, você deve incluir a URL de conexão do banco de dados, que pode ser obtida facilmente pela Vercel (criadora do Next.js). A conexão pode ser feita localmente ou por meio de terceiros, mas é obrigatório o uso de um banco de dados **PostgreSQL**.
